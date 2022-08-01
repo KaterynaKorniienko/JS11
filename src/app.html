@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./app.css" />
+  <title>Fetch Countries app</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@pnotify/core@5.2.0/dist/PNotify.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@pnotify/core@5.2.0/dist/Material.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@pnotify/core@5.2.0/dist/BrightTheme.css" />
+</head>
+<body>
+  <div class="display">
+    <div class="search">
+      <h1>Fetch Countries app</h1>
+      <h3>Country name:</h3>
+   </div>
+      <form>
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="searchQuery" class="sr-only"></label>
+          <input type="text" class="form-control" name="query" id="searchQuery" placeholder="Search country"
+            autocomplete="off" />
+        </div>
+        <div class="data">
+          <template class="country-template">
+            <li class="country__name">
+              <img src="{{this.flags.png}}" style="height: 16px" />
+            </li>
+            <li class="capital">Capital:</li>
+            <li class="languages">Languages:</li>
+          </template>
+      </form>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+      integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      </script>
+    </div>
+<script src="./index.js"></script>
+</body>
+</html>
